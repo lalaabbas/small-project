@@ -2,10 +2,8 @@
 @font-face {
   font-family: "icomoon";
   src: url("./../pro/assets/fonts/icomoon/icomoon.eot");
-  src: url("./..//pro/assets/fonts/icomoon/icomoon.eot?#iefix")
-      format("embedded-opentype"),
-    url("./..//pro/assets/fonts/icomoon/icomoon.woff") format("woff"),
-    url("./..//pro/assets/fonts/icomoon/icomoon.ttf") format("truetype"),
+  src: url("./..//pro/assets/fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"),
+    url("./..//pro/assets/fonts/icomoon/icomoon.woff") format("woff"), url("./..//pro/assets/fonts/icomoon/icomoon.ttf") format("truetype"),
     url("./..//pro/assets/fonts/icomoon/icomoon.svg#icomoon") format("svg");
 }
 
@@ -21,12 +19,16 @@ header {
   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
   height: 60px;
 }
+
 header img {
   display: flex;
 }
+.logo-area {
+  width: 10%;
+}
 .menu ul {
   display: flex;
-  grid-column-gap: 50px;
+  grid-column-gap: 110px;
 
   margin-left: 80px;
   text-transform: uppercase;
@@ -34,6 +36,11 @@ header img {
   font-weight: 500;
   padding-top: 20px;
 }
+
+a {
+  text-decoration: none !important;
+}
+
 ul {
   list-style: none;
 }
@@ -44,13 +51,14 @@ ul {
 }
 .menu {
   display: none;
-  align-items: center;
+  align-items: baseline;
   grid-column-gap: 20px;
+  width: 100%;
 }
 .menu-btn {
   display: block;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .menu {
     display: flex;
   }
@@ -166,3 +174,11 @@ h5 {
   height: 64px;
   width: 100%;
 }
+
+@media only screen and (max-width: 1200px) {
+  .nav-items {
+    grid-column-gap: 60px !important;
+  }
+}
+
+@media;
